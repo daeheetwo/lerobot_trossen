@@ -208,3 +208,6 @@ __marimo__/
 
 # Other
 outputs/
+
+# Local sequence evaluation recordings
+output/

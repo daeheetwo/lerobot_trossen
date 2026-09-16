@@ -743,3 +743,10 @@ adds an `idle` line for every other frame, which is what separates "pacing never
 "pacing fired and was not enough". `avg_v` is the average velocity the pacing model believes it
 commanded; compare it against that joint's `velocity_max`, and remember the measured peak runs
 about twice the average.
+
+
+## ACT Task08 to Task09 sequence evaluation
+
+See [ACT sequence evaluation (Korean)](docs/ACT_SEQUENCE.md) for local mock tests and
+manual switching between two ACT checkpoints without reconnecting or homing the
+robot between stages. Existing `lerobot-record` behavior is unchanged.

@@ -23,6 +23,10 @@ class WidowXAIFollowerConfig(RobotConfig):
     # A recommended starting value is 3.0.
     min_time_to_move_multiplier: float = 3.0
 
+    # Keep the existing parking sequence by default. Sequence evaluation opts
+    # out so abort/cleanup does not command a staged/sleep pose while holding objects.
+    park_on_disconnect: bool = True
+
     # Safety factor in (0, 1] applied to the controller's hard joint velocity
     # limits when pacing a large position jump.
     #

@@ -25,6 +25,10 @@ class BiWidowXAIFollowerRobotConfig(RobotConfig):
     # This value is shared between both arms.
     min_time_to_move_multiplier: float = 3.0
 
+    # Keep the existing parking sequence by default. Sequence evaluation opts
+    # out so abort/cleanup does not command a staged/sleep pose while holding objects.
+    park_on_disconnect: bool = True
+
     # Safety factor in (0, 1] applied to the hard joint velocity limits when
     # pacing large position jumps (shared between both arms). See
     # WidowXAIFollowerConfig for the hardware measurements behind this default.
